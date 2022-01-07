@@ -284,12 +284,18 @@ $(document).ready(function(){
         if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
         else window.location.href += $(this).attr('href');
       });
-
       // glossary links onclick handler
       $("a[href^='#glossary_']").on("click", function(e) {
         let anchor = $(this).attr("href").replace(/^#/, '');
         activateGlossary(anchor);
       });
+
+    $( document ).ready(function() {
+        $("#collapseAll").click( function() {
+                $('.accordion-header').toggleClass('active')
+        });
+
+    });
 
       function activateGlossary(anchor) {
         let hash = location.hash.replace(/^#/, '');

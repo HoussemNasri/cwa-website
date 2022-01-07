@@ -3,16 +3,22 @@
         "headline": {
             "title": "Häufig gestellte Fragen zur Corona-Warn-App"
         },
+
         "texts": {
             "permalink": "Link zu dieser Antwort",
             "search": "Suche",
             "questions": "Fragen",
             "to_top": "Zum Anfang"
         },
+        "button-collapse": {
+            "fields": {
+                "collapse": "Alle öffnen/schließen"
+            }},
         "sections": [
             {
                 "title": "Support",
                 "id": "support",
+
                 "active": false,
                 "accordion": [
                     {
